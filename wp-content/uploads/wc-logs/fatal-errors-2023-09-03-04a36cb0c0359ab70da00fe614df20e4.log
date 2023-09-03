@@ -1,0 +1,35 @@
+2023-09-03T14:42:53+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:42:53+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:42:53+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:43:14+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:43:15+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:43:15+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:43:33+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:43:33+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:43:33+00:00 CRITICAL require_once(): Failed opening required '/app/wp-content/plugins/Compétitions/service/GIT_Database_Service.php' (include_path='.:/usr/local/lib/php') in /app/wp-content/plugins/Compétitions/Joueur_List.php on line 8
+
+2023-09-03T14:44:19+00:00 CRITICAL Uncaught Error: Class 'GIT_tournements' not found in /app/wp-includes/class-wp-widget-factory.php:62
+Stack trace:
+#0 /app/wp-includes/widgets.php(115): WP_Widget_Factory->register('GIT_tournements')
+#1 /app/wp-content/plugins/Compétitions/pluginburst.php(34): register_widget('GIT_tournements')
+#2 /app/wp-includes/class-wp-hook.php(310): GIT->{closure}('')
+#3 /app/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#4 /app/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /app/wp-includes/widgets.php(1858): do_action('widgets_init')
+#6 /app/wp-includes/class-wp-hook.php(310): wp_widgets_init('')
+#7 /app/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#8 /app/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /app/wp-settings.php(632): do_action('init')
+#10 /app/wp-config.php(102): require_once('/app/wp-setting...')
+#11 /app/wp-load.php(50): require_once('/app/wp-config....')
+#12 /app/wp-admin/admin.php(34): require_once('/app/wp-load.ph...')
+#13 /app/ in /app/wp-includes/class-wp-widget-factory.php on line 62
+

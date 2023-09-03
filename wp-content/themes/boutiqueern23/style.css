@@ -1,0 +1,275 @@
+/* 
+Theme Name: Boutique ERN 23
+Description: Boutique de l'ERN 23
+Author: ERN 23 Team
+Version: 1.0
+Tags: boutique, ern23, shop, e-commerce
+*/
+
+/* 
+Bleu clair: 	rgb(21,76,175);
+Bleu : 	rgb(12,47,105);
+Bleu foncé:  rgb(2,12,27);
+Noir clair: rgb(35,35,35);
+Noir: 	rgb(26,26,26);
+Noir foncé: 	rgb(5,5,5);
+
+*/
+
+/* ************* HEADER ************* */
+.head-er{
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+.text-light{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.text-light > h2 {
+    font-size: 60px;
+}
+
+/* STYLE POUR LE MENU AVEC SOUS-CATEGORIES */
+ul.custom-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+ul.custom-menu li{
+    margin-right: 30px;
+    position: relative;
+}
+
+ul.custom-menu li:last-child{
+    margin-right: 0;
+}
+
+ul.custom-menu li a{
+    padding:15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* style pour les sous-menu */
+ul.custom-menu ul{
+    display: none;
+    position: absolute;
+    padding: 0;
+    top:100%;
+    left:0;
+    min-width: 200px;
+    background-color: black;
+    border:1px solid #0c2f69;
+    z-index: 999;
+}
+
+ul.custom-menu ul li{
+    position:relative;
+    list-style: none; 
+    width: 100%;
+    text-align: center;
+}
+
+ul.custom-menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-menu > li:hover{
+    background-color: #0c2f69;
+}
+
+/* style pour le dépliement des sous-menus */
+ul.custom-menu li:hover > ul{
+    display:block;
+    top:100%;
+    left:0;
+}
+
+
+/* style pour les appareils mobiles */
+@media(max-width: 768px){
+    ul.custom-menu{
+        flex-direction: column;
+    }
+
+    ul.custom-menu li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    ul.custom-menu li:last-child{
+        margin-bottom: 0; /* pour éviter le décalage du dernier élément */
+    }
+
+    ul.custom-menu li.menu-item-has-children:hover > ul{
+        display:block;
+        top:100%;
+        left:auto;
+        margin-top:0; /* pour éviter le décalage du sous-menu */
+    }
+}
+
+/* ************* Style pour la page Accueil ************* */
+
+body{
+    background-image: url("./img/frame.png");
+    color: white;
+}
+    
+
+h1{
+    text-align: center;
+    margin: 40px;
+}
+
+.wp-block-heading{
+    text-align: center;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    margin-bottom: 40px;
+}
+
+.container > p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+/* Style pour les produits */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: espacement entre les éléments */
+    gap:40px;
+}
+
+.product-container{
+    flex: 1 0 calc(33.33% - 40px); /* 3 produits par ligne, moins l'espace entre les produits */
+}
+
+.image_prod{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.bg-card-color{
+    background: rgba(2,12,27,1);
+}
+
+/* style pour le bouton ajouter au panier */
+.add_to_cart_button{
+    background: linear-gradient(90deg, #0297FF 18.23%, #465FE0 48.96%, #7936C9 83.85%);    
+    color: #fff;
+    border: 1px solid rgb(12,47,105);
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.add_to_cart_button:hover{
+    background: linear-gradient(90deg,#7936C9 18.23% , #465FE0 48.96%, #0297FF 83.85%);;
+    color: #fff;
+}
+
+.qty{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.quantity > label{
+    display:none;
+}
+
+
+.image_desc{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+
+}
+
+.title_prod{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgb(21,76,175);
+}
+
+.price_prod{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgb(21,76,175);
+    margin-right: 30px;
+}
+
+cite.fn >a{
+    font-weight: bold;
+    margin: 5px;
+    color: rgb(21,76,175) !important;
+}
+
+.container_com{
+    border: 1px solid rgb(21,76,175);
+    padding: 10px;
+    margin: 10px;
+}
+
+.container_com ul{
+    list-style: none;
+    
+}
+
+.text_com{
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.btn-color{
+    background: linear-gradient(90deg, #0297FF 18.23%, #465FE0 48.96%, #7936C9 83.85%); 
+    color: #fff;
+    border: 1px solid rgb(26,26,26);  
+}
+
+.btn-color:hover{
+    background: linear-gradient(90deg,#7936C9 18.23% , #465FE0 48.96%, #0297FF 83.85%);;
+    color: #fff;
+
+}
+
+.page-numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+/* ********** FOOTER ********** */
+.foot-er{
+    border-top: 1px solid white;
+}
+
+.custom-menu-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
